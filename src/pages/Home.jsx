@@ -65,7 +65,8 @@ export default function Home() {
       const result = await insert(payload);
       console.log(result);
       // lightweight UX:
-      alert("Submitted — check console for payload (or swap in your API).");
+      //alert("Submitted — check console for payload (or swap in your API).");
+      
       // reset form if you like:
       setForm({
         name: "",

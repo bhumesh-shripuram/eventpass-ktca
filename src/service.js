@@ -82,7 +82,7 @@ export async function insert(formData = {}, { signal } = {}) {
     no_of_actual_children: formData.no_of_actual_children ?? 0,
     preparing: !!formData.preparing,
     first_time: !!formData.first_time,
-    present: !!formData.present || false,
+    // present: !!formData.present || false,
     // optionally include submitted_at if you want client timestamp
     submitted_at: formData.submitted_at ?? new Date().toISOString(),
     raw_response: formData.raw_response ?? null,
