@@ -66,7 +66,7 @@ export default function Home() {
       console.log(result);
       // lightweight UX:
       //alert("Submitted — check console for payload (or swap in your API).");
-      
+      alert("The user info is updated to the system. Thank you!!")
       // reset form if you like:
       setForm({
         name: "",
