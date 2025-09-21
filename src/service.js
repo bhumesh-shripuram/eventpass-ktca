@@ -86,7 +86,8 @@ export async function insert(formData = {}, { signal } = {}) {
     // optionally include submitted_at if you want client timestamp
     submitted_at: formData.submitted_at ?? new Date().toISOString(),
     raw_response: formData.raw_response ?? null,
-    present: true
+    present: true,
+    adhoc: true
   };
 
   const res = await fetch(ENDPOINT, {
